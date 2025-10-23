@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Web - Deristiana Purtiwan</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Work+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="container">
+        <nav class="navbar card">
+            <div class="nav-logo">
+                <a href="index.html">Ezzzy</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-button">Beranda</a></li>
+                <li><a href="analisis-tulisan.html" class="nav-button">Analisis & Tulisan</a></li>
+                <li><a href="portofolio-web.html" class="nav-button active">Portofolio Web</a></li>
+                <li><a href="pendidikan-keahlian.html" class="nav-button">Pendidikan & Keahlian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="page-header card">
+            <h1>Portofolio Web</h1>
+            <p>Kumpulan proyek yang menunjukkan keahlian saya di bidang web programming dari freelance full-stack hingga proyek akademis.</p>
+        </section>
+
+        <section class="github-promo card">
+            <h2>Lihat Kode Saya di GitHub</h2>
+            <p>Sebagian besar kode sumber proyek pribadi dan eksplorasi saya tersedia di GitHub. Silakan kunjungi untuk melihat lebih detail.</p>
+            <a href="https://github.com/Eriez41" target="_blank" class="btn btn-primary">Kunjungi GitHub Saya</a>
+        </section>
+
+        <section class="project-gallery">
+    <h2>Proyek Unggulan</h2>
+
+    <article class="project-card card">
+        <div class="project-content">
+            <span class="hero-subtitle">PHP / JS / METODE SAW</span>
+            <h3>SPK Rekomendasi Pembelian Smartphone</h3>
+            <p>Implementasi dari skripsi. Aplikasi ini membantu pengguna memilih smartphone berdasarkan kriteria yang dihitung menggunakan metode Simple Additive Weighting (SAW). Dibangun dengan PHP murni dan JavaScript.</p>
+            <div class="project-links">
+                <a href="#" class="btn" id="openSpkHpModal">Lihat Detail</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card card">
+        <div class="project-content">
+            <span class="hero-subtitle">PHP / JS / METODE SAW</span>
+            <h3>SPK Rekomendasi Jurusan (Universitas Perjuangan)</h3>
+            <p>Aplikasi untuk membantu calon mahasiswa baru Universitas Perjuangan Tasikmalaya dalam memilih jurusan. Aplikasi ini menerapkan metode SAW untuk memproses nilai dan minat sebagai bahan rekomendasi.</p>
+            <div class="project-links">
+                <a href="#" class="btn" id="openSpkJurusanModal">Lihat Detail</a>
+            </div>
+        </div>
+    </article>
+</section>
+    </main>
+<div id="spkHpModal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="closeSpkHpModal" class="modal-close-btn">&times;</button>
+            
+            <span class="hero-subtitle">DETAIL PROYEK WEB</span>
+            <h2>SPK Rekomendasi Pembelian Smartphone</h2>
+            
+            <img src="assets/images/ss-rekomendasi.png" alt="Screenshot Aplikasi SPK Smartphone" class="modal-image">
+
+            <p><strong>Deskripsi Proyek:</strong></p>
+            <p>Aplikasi web ini adalah implementasi dari skripsi saya, yang dirancang untuk membantu pengguna menemukan smartphone yang paling sesuai dengan kebutuhan mereka. Aplikasi ini menggunakan metode *Simple Additive Weighting* (SAW) untuk menghitung skor setiap alternatif (smartphone) berdasarkan kriteria yang telah ditentukan (seperti harga, kamera, performa, dll.).</p>
+
+            <p><strong>Teknologi yang Digunakan:</strong></p>
+            <ul>
+                <li><strong>Back-End:</strong> PHP Murni (untuk semua logika perhitungan SAW dan manajemen data).</li>
+                <li><strong>Front-End:</strong> HTML, CSS, dan JavaScript Murni (untuk antarmuka pengguna dan input).</li>
+                <li><strong>Database:</strong> MySQL.</li>
+            </ul>
+
+            <div class="modal-buttons">
+                <a href="https://github.com/[USERNAME_GITHUB_KAMU]/[NAMA_REPO_SPK_HP]" target="_blank" class="btn btn-secondary">Lihat Kode di GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="spkJurusanModal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="closeSpkJurusanModal" class="modal-close-btn">&times;</button>
+            
+            <span class="hero-subtitle">DETAIL PROYEK WEB</span>
+            <h2>SPK Rekomendasi Jurusan (Universitas Perjuangan)</h2>
+            
+            <img src="assets/images/ss-jurusan.png" alt="Screenshot Aplikasi SPK Jurusan" class="modal-image">
+
+            <p><strong>Deskripsi Proyek:</strong></p>
+            <p>Aplikasi web ini dirancang untuk membantu calon mahasiswa baru di Universitas Perjuangan Tasikmalaya yang masih bingung dalam menentukan pilihan jurusan. Sistem ini menggunakan metode *Simple Additive Weighting* (SAW) untuk menghitung dan memberikan rekomendasi berdasarkan nilai (misal: nilai rapor) dan/atau minat yang diinput oleh pengguna.</p>
+
+            <p><strong>Teknologi yang Digunakan:</strong></p>
+            <ul>
+                <li><strong>Back-End:</strong> PHP Murni (untuk logika perhitungan SAW).</li>
+                <li><strong>Front-End:</strong> HTML, CSS, dan JavaScript Murni.</li>
+                <li><strong>Database:</strong> MySQL.</li>
+            </ul>
+
+            <div class="modal-buttons">
+                <a href="https://github.com/[USERNAME_GITHUB_KAMU]/[NAMA_REPO_SPK_JURUSAN]" target="_blank" class="btn btn-secondary">Lihat Kode di GitHub</a>
+            </div>
+        </div>
+    </div>
+  
+<br><br>
+    <footer class="container">
+        <p>© 2025 Deristiana Purtiwan.</p>
+        <div class="footer-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="mailto:eriezpurtiwan03@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

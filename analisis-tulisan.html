@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis & Tulisan - Deristiana Purtiwan</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Work+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="container">
+        <nav class="navbar card">
+            <div class="nav-logo">
+                <a href="index.html">Ezzzy</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-button">Beranda</a></li>
+                <li><a href="analisis-tulisan.html" class="nav-button active">Analisis & Tulisan</a></li>
+                <li><a href="portofolio-web.html" class="nav-button">Portofolio Web</a></li>
+                <li><a href="pendidikan-keahlian.html" class="nav-button">Pendidikan & Keahlian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="page-header card">
+            <h1>Analisis & Tulisan</h1>
+            <p>Bukti kemampuan analisis akademis (skripsi), eksplorasi teknis (oprek), dan kemampuan menyampaikan ulasan.</p>
+        </section>
+
+        <section class="analysis-highlight card">
+            <span class="hero-subtitle">KARYA ILMIAH UTAMA (SKRIPSI)</span>
+            <h2>Sistem Pendukung Keputusan (SPK) untuk Rekomendasi Pembelian Smartphone Android</h2>
+            <p>Skripsi ini adalah bukti kemampuan saya dalam menganalisis berbagai kriteria smartphone secara objektif. Saya merancang dan membangun sistem yang dapat memberikan rekomendasi berdasarkan kebutuhan pengguna menggunakan metode SAW.</p>
+            <a href="assets/docs/skripsi.pdf" target="_blank" class="btn btn-primary">Download PDF Skripsi</a>
+        </section>
+
+        <section class="analysis-list">
+            <h2>Tulisan Lainnya</h2>
+            
+            <article class="card">
+                <span class="hero-subtitle">CONTOH REVIEW</span>
+                <h3>Pengalaman 6+ Bulan: Xiaomi Mi9 (cepheus) + Custom ROM MIUI Tikz!</h3>
+                <p>Ulasan daily driver Xiaomi Mi9 (cepheus) yang di-upgrade dari MIUI 12.5 (Android 11) ke MIUI 14.0.3.0 by Tikz! (non-root). ROM ini dipilih karena sangat stabil untuk penggunaan jangka panjang dan tidak memerlukan oprek Google Play Certification yang merepotkan (meskipun pribadi lebih menyukai AOSP seperti Evolution X). Perangkat ini dimodifikasi baterai (BM 47) dan digunakan untuk kebutuhan standar (sosmed, Mobile Legends) tanpa tweaking berat. Performa terbukti sangat solid, dengan penurunan hanya di sektor baterai yang sudah berumur.</p>
+                <a href="#" class="btn" id="openMi9Modal">Lihat Detail</a>
+            </article>
+
+            <article class="card">
+                <span class="hero-subtitle">CATATAN EKSPLORASI</span>
+                <h3>Studi Kasus: macOS Sonoma 14.8 di ThinkPad x260 (i5 6300U)</h3>
+                <p>Dokumentasi proses instalasi di ThinkPad x260 (i5 6300U, 8GB RAM, RX7 128GB SSD). Proses awal menggunakan OpenCore Simplify dan Olarila raw menemui kendala bug (masalah sleep & indikator baterai). Solusi akhir adalah mengadopsi EFI dari repositori GitHub dan melakukan tweak minor pada kext (khususnya `itlwm` untuk WiFi) agar stabil dan nyaman digunakan. Bug minor (Serial Number 0000000) tidak diperbaiki karena tidak mengganggu fungsionalitas.</p>
+                <a href="#" class="btn" id="openHackintoshModal">Lihat Detail</a>
+            </article>
+
+            <article class="card">
+                <span class="hero-subtitle">CATATAN EKSPLORASI</span>
+                <h3>Setup Laptop "Backup" Oprek: Fedora 42 + Ghost Spectre</h3>
+                <p>Pemanfaatan laptop lawas (HP ProBook 6470b, i5-3210M) sebagai "alat tempur" cadangan. Dikonfigurasi dual-boot dengan Fedora 42 (Gnome) untuk eksperimen distro Linux, dan Windows 10 Ghost Spectre (OS lite) yang didedikasikan khusus untuk kebutuhan flashing smartphone.</p>
+                <a href="#" class="btn" id="openLinuxModal">Lihat Detail</a>
+            </article>
+            
+            </section>
+    </main>
+    </main>
+
+    <div id="linuxModal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="closeLinuxModal" class="modal-close-btn">&times;</button>
+            
+            <span class="hero-subtitle">DETAIL LINUX SETUP</span>
+            <h2>Laptop "Backup" Oprek: HP ProBook 6470b</h2>
+
+            <p><strong>Spesifikasi Perangkat (Laptop Cadangan):</strong></p>
+            <ul>
+                <li><strong>Laptop:</strong> HP ProBook 6470b</li>
+                <li><strong>Kondisi:</strong> Memprihatinkan (Engsel LCD rusak, bodi patah, baterai mati/harus colok).</li>
+                <li><strong>CPU:</strong> Intel Core i5-3210M (Ivy Bridge)</li>
+                <li><strong>RAM:</strong> 4GB DDR3 Dual-Channel</li>
+                <li><strong>SSD:</strong> WD Green 240GB SATA</li>
+            </ul>
+
+            <p><strong>Konfigurasi Dual-Boot & Skenario Penggunaan:</strong></p>
+            <ul>
+                <li><strong>OS 1 (Eksperimen):</strong> Fedora 42 (Gnome). Digunakan murni untuk "bermain" dan menguji distro Linux terbaru di hardware lawas.</li>
+                <li><strong>OS 2 (Flashing):</strong> Windows 10 by Ghost Spectre (Lite OS). Didedikasikan khusus untuk flashing smartphone (Android), karena banyak flashing tools yang lebih stabil berjalan di lingkungan Windows.</li>
+            </ul>
+
+            <p><strong>Catatan Performa (Per 2025):</strong></p>
+            <ul>
+                <li>Meskipun kondisi fisiknya hancur, performa mesin (CPU i5 Gen 3 + SSD) secara mengejutkan masih sangat "OK" dan mumpuni untuk tugas spesifiknya: flashing dan oprek ringan.</li>
+                <li>Laptop ini berfungsi sebagai backup utama jika ThinkPad (laptop utama) mengalami masalah.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="mi9Modal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="closeMi9Modal" class="modal-close-btn">&times;</button>
+            
+            <span class="hero-subtitle">DETAIL REVIEW</span>
+            <h2>Pengalaman Jangka Panjang: Xiaomi Mi9 (cepheus)</h2>
+            
+            <p><strong>Spesifikasi & Konfigurasi:</strong></p>
+            <ul>
+                <li><strong>Perangkat:</strong> Xiaomi Mi9 (cepheus)</li>
+                <li><strong>ROM:</strong> MIUI 14.0.3.0 by Tikz! (Non-Root) Android 12</li>
+                <li><strong>Kernel:</strong> Standar (bawaan ROM)</li>
+                <li><strong>Modifikasi:</strong> Baterai diganti ke BM 47 (milik Redmi 4x)</li>
+            </ul>
+
+            <p><strong>Alasan Pindah ROM:</strong></p>
+            <ul>
+                <li>Alasan utama adalah untuk upgrade versi Android, karena ROM bawaan Mi9 (MIUI 12.5) sudah mentok di Android 11.</li>
+                <li>ROM MIUI Tikz! dipilih karena reputasinya yang sangat stabil untuk penggunaan jangka panjang (sudah dipakai +- 6 bulan).</li>
+            </ul>
+
+            <p><strong>Pengalaman Penggunaan (Daily Use):</strong></p>
+            <ul>
+                <li>Penggunaan standar: Sosial media, fotografi ringan, dan game ringan (Mobile Legends).</li>
+                <li>Tidak ada tweaking berat (seperti ganti kernel) karena ROM sudah sangat stabil. Kustomisasi hanya sebatas tema MIUI.</li>
+                <li>Performa masih sangat solid, belum ada penurunan signifikan. Kendala hanya di baterai modifikasi yang wajar (sudah berumur 1 tahun lebih).</li>
+            </ul>
+
+            <p><strong>Catatan Tambahan:</strong></p>
+            <ul>
+                <li>Secara pribadi lebih menyukai feel AOSP (terakhir pakai Evolution X Android 15).</li>
+                <li>Namun, ROM AOSP saat ini sering terkendala Google Play Certification yang butuh oprek lebih lanjut, sehingga MIUI Tikz! menjadi pilihan yang lebih praktis untuk daily driver.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="hackintoshModal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="closeHackintoshModal" class="modal-close-btn">&times;</button>
+            
+            <span class="hero-subtitle">DETAIL EKSPLORASI</span>
+            <h2>Studi Kasus: macOS Sonoma 14.8 di ThinkPad x260</h2>
+            <img src="assets/images/ss.png" alt="Screenshot macOS Sonoma di ThinkPad x260" class="modal-image">
+            <p><strong>Spesifikasi Perangkat:</strong></p>
+            <ul>
+                <li><strong>Laptop:</strong> Lenovo ThinkPad x260</li>
+                <li><strong>CPU:</strong> Intel Core i5-6300U</li>
+                <li><strong>RAM:</strong> 8GB DDR4 Single-Channel</li>
+                <li><strong>SSD:</strong> RX7 128GB SATA</li>
+            </ul>
+
+            <p><strong>Proses Awal (Gagal):</strong></p>
+            <ul>
+                <li>Instalasi menggunakan OpenCore Simplify dan raw image dari Olarila.</li>
+                <li><strong>Hasil:</strong> Gagal. Menemui banyak bug kritis, terutama sleep mode yang tidak berfungsi dan indikator baterai yang error terus-menerus.</li>
+            </ul>
+
+            <p><strong>Proses Akhir (Berhasil):</strong></p>
+            <ul>
+                <li>Solusi: Mencari dan mengadopsi file EFI yang sudah jadi dari repositori GitHub, yang dibuat khusus untuk ThinkPad x260.</li>
+                <li>Melakukan tweak minor, khususnya pada Kext `itlwm` untuk mengaktifkan fungsionalitas WiFi internal Intel.</li>
+            </ul>
+
+            <p><strong>Status Saat Ini:</strong></p>
+            <ul>
+                <li>Sistem berjalan sangat stabil dan nyaman untuk penggunaan sehari-hari.</li>
+                <li><strong>Sisa Bug:</strong> Serial Number terdeteksi sebagai '0000000'. Bug ini tidak diperbaiki karena tidak mengganggu fungsionalitas utama.</li>
+            </ul>
+        </div>
+    </div>
+   
+<br><br>
+    <footer class="container">
+        <p>© 2025 Deristiana Purtiwan.</p>
+        <div class="footer-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="mailto:eriezpurtiwan03@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
